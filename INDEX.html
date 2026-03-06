@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1Y ARCHITECTS | Professional Design Services</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  /* Global white background for unified visual style */
+  body { background:#ffffff; font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif; }
+  /* Navbar style */
+  .navbar { background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.05); }
+  /* Project card style */
+  .project-item {
+    border-radius:8px; overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+    transition:0.3s; cursor:pointer;
+    background: #fff;
+  }
+  .project-item:hover { transform:translateY(-5px); }
+  .project-item img { width:100%; height:260px; object-fit:cover; }
+  /* Modal image styles */
+  .thumb-img { height:80px; object-fit:cover; cursor:pointer; margin-bottom:8px; border-radius:4px; }
+  .main-img { max-height:600px; object-fit:contain; width:100%; }
+  /* Footer style */
+  footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    margin-top: 50px;
+    text-align: center;
+    color: #666;
+  }
+</style>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">1Y ARCHITECTS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#intro">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Our Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Banner -->
+<header style="display: flex; justify-content: center; align-items: center; height: 600px; margin: 0; padding: 0;">
+  <img src="images/banner.jpg" 
+       style="width: auto; height: 620px; max-width: 100%; object-fit: contain; margin: 0; padding: 0;" 
+       alt="1Y Architects - Logo">
+</header>
+
+
+<!-- About Us Section -->
+<section id="intro" class="py-5 px-md-5">
+  <div class="container text-center">
+    <h3 class="mb-3">About Us</h3>
+    <p class="text-muted" style="max-width:800px; margin:0 auto; line-height: 1.8;">
+      1Y Architects was founded by Fan Chang and Liu Yangcheng in 2023. <br><br>
+      We believe that the architectural space is the container of human memory.<br><br>
+      Fan Chang, Master of architecture from ESA Paris<br><br>
+      Liu Yangcheng, Master of Urban Design from CUHK, Registered architect in China
+    </p>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="container py-3">
+  <h3 class="text-center mb-5">Our Projects</h3>
+  <div class="row g-4">
+    <!-- Project 1 -->
+    <div class="col-12"> 
+      <div class="project-item p-2" data-bs-toggle="modal" data-bs-target="#modal-1">
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0 w-1/3"> 
+            <img src="images/project1_cover.jpg" alt="Museum of sound - Cover Image">
+          </div>
+          <div class="flex-grow-1 p-4"> 
+            <h6>Museum of Sound</h6>
+            <small class="text-muted">cultural | post-industrial heritage </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project 2 -->
+    <div class="col-12"> 
+      <div class="project-item p-2" data-bs-toggle="modal" data-bs-target="#modal-2">
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0 w-1/3">
+            <img src="images/project2_cover.jpg" alt="Urban Renewal of Hapharm Group No.6 Factory - Cover Image">
+          </div>
+          <div class="flex-grow-1 p-4">
+            <h6>Urban Renewal of Hapharm Group No.6 Factory</h6>
+            <small class="text-muted">urban renovation | post-industrial heritage</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project 3-->
+    <div class="col-12"> 
+      <div class="project-item p-2" data-bs-toggle="modal" data-bs-target="#modal-3">
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0 w-1/3">
+            <img src="images/project3_cover.jpg" alt="Fire station in Huangdu - Cover Image">
+          </div>
+          <div class="flex-grow-1 p-4">
+            <h6>Fire station in Huangdu</h6>
+            <small class="text-muted">Urban infrastructure</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project 4 -->
+    <div class="col-12"> 
+      <div class="project-item p-2" data-bs-toggle="modal" data-bs-target="#modal-4">
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0 w-1/3">
+            <img src="images/project4_cover.jpg" alt="A "SUPER SMALL" Kindergarten  - Cover Image">
+          </div>
+          <div class="flex-grow-1 p-4">
+            <h6>A "SUPER SMALL" Kindergarten</h6>
+            <small class="text-muted">educational | public </small>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="py-5 px-md-5 mt-5">
+  <div class="container text-center">
+    <h3 class="mb-3">Contact Us</h3>
+    <p class="text-muted" style="max-width:800px; margin:0 auto;">
+      <strong>Address：</strong>6F, building 2, Qingjiangdong road 39, Chengdu, China<br>
+      <strong>Phone：</strong>+86 19980758776<br>
+      <strong>Email：</strong>fanchang@1yarchi.cn
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background-color: #ffffff; padding: 30px 0; margin-top: 50px; text-align: center; color: #666;">
+  <div class="container">
+    <p>© 2026 1Y architects. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Project 1 Modal -->
+<div class="modal fade" id="modal-1" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-header border-0">
+        <h5>Museum of sound</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <!-- Main Image -->
+          <div class="col-md-8">
+            <img id="main-1" src="images/project1_main1.jpg" class="main-img" alt="Modern Residential Design - Main Image">
+          </div>
+          <!-- Thumbnails + Details -->
+          <div class="col-md-4">
+            <img onclick="document.getElementById('main-1').src=this.src" src="images/project1_main1.jpg" class="w-100 thumb-img" alt="Image 1">
+            <img onclick="document.getElementById('main-1').src=this.src" src="images/project1_thumb2.jpg" class="w-100 thumb-img" alt="Image 2">
+            <img onclick="document.getElementById('main-1').src=this.src" src="images/project1_thumb3.jpg" class="w-100 thumb-img" alt="Image 3">
+            
+            <div class="mt-3 text-start">
+              <p><strong>Project Location：</strong>Zhuzhou City, China</p>
+              <p><strong>Building Area：</strong>400 sq.m</p>
+              <p><strong>Design Period：</strong>2025</p>
+              <p><strong>Design Concept：</strong><br>Rebuild the industrial space from architectural ruins, Recall industrial memories with sound.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 2 Modal -->
+<div class="modal fade" id="modal-2" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-header border-0">
+        <h5>Urban Renewal of Hapharm Group No.6 Factory</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-8">
+            <img id="main-2" src="images/project2_main1.jpg" class="main-img" alt="Urban Renewal of Hapharm Group No.6 Factory - Main Image">
+          </div>
+          <div class="col-md-4">
+            <img onclick="document.getElementById('main-2').src=this.src" src="images/project2_main1.jpg" class="w-100 thumb-img" alt="Image 1">
+            <img onclick="document.getElementById('main-2').src=this.src" src="images/project2_thumb2.jpg" class="w-100 thumb-img" alt="Image 2">
+            <img onclick="document.getElementById('main-2').src=this.src" src="images/project2_thumb3.jpg" class="w-100 thumb-img" alt="Image 3">
+            
+            <div class="mt-3 text-start">
+              <p><strong>Project Location：</strong>Harbin City, China</p>
+              <p><strong>Building Area：</strong>170,000 sq.m</p>
+              <p><strong>Design Concept：</strong><br>Transformation of an industrial heritage into an urban art park.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 3 Modal (Reserved) -->
+<div class="modal fade" id="modal-3" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-header border-0">
+        <h5>Fire station in Huangdu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-8">
+            <img id="main-3" src="images/project3_main1.jpg" class="main-img" alt="Fire station in Huangdu - Main Image">
+          </div>
+          <div class="col-md-4">
+            <img onclick="document.getElementById('main-3').src=this.src" src="images/project3_main1.jpg" class="w-100 thumb-img" alt="Image 1">
+            <img onclick="document.getElementById('main-3').src=this.src" src="images/project3_thumb2.jpg" class="w-100 thumb-img" alt="Image 2">
+            <img onclick="document.getElementById('main-3').src=this.src" src="images/project3_thumb3.jpg" class="w-100 thumb-img" alt="Image 3">
+            
+            <div class="mt-3 text-start">
+              <p><strong>Project Location：</strong>Huangdu District, Shanghai City, China</p>
+              <p><strong>Building Area：</strong>3750 sq.m</p>
+              <p><strong>Design Concept：</strong><br>A harbor living in harmony with nature and the surrounding community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 4 Modal -->
+<div class="modal fade" id="modal-4" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-header border-0">
+        <h5>A "SUPER SMALL" Kindergarten</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-8">
+            <img id="main-4" src="images/project4_main1.jpg" class="main-img" alt="A "SUPER SMALL" Kindergarten - Main Image">
+          </div>
+          <div class="col-md-4">
+            <img onclick="document.getElementById('main-4').src=this.src" src="images/project4_main1.jpg" class="w-100 thumb-img" alt="Image 1">
+            <img onclick="document.getElementById('main-4').src=this.src" src="images/project4_thumb2.jpg" class="w-100 thumb-img" alt="Image 2">
+            <img onclick="document.getElementById('main-4').src=this.src" src="images/project4_thumb3.jpg" class="w-100 thumb-img" alt="Image 3">
+            
+            <div class="mt-3 text-start">
+              <p><strong>Project Location：</strong>/</p>
+              <p><strong>Building Area：</strong>50 sq.m</p>
+              <p><strong>Design Concept：</strong><br>A self-construction school by traditional Mortise and Tenon Wood Handmade Craftsmanship. Featuring with 50㎡(living space) + X㎡(nature class)  = ∞(knowledge).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS for interactivity -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
